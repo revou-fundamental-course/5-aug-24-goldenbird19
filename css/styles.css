@@ -115,8 +115,8 @@ input[type="text"] {
 #bmi-description {
   height: 100px; /* Tinggi textarea */
   font-size: 18px; /* Ukuran font */
-  line-height: 70px; /* Tinggi baris untuk menengah teks */
-  padding: 5px; /* Padding di dalam textarea */
+  line-height: 20px; /* Tinggi baris untuk menengah teks */
+  padding: 0px; /* Padding di dalam textarea */
   border: 1px solid #060606; /* Garis tepi hitam */
   box-sizing: border-box; /* Menyertakan padding dalam ukuran elemen */
 }
