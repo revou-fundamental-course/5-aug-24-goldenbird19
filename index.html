@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -18,32 +18,31 @@
                     Use the "Metric Units" tab for the International System of Units or the "Other Units" tab to convert units into either US or metric units. 
                     Note that the calculator also computes the Ponderal Index in addition to BMI, both of which are discussed below in detail. </p>
             </article>
-            
+
             <form>
                 <div>
                     <h3> Jenis Kelamin</h3>
-                    <input type="radio" id="laki-laki" name="jenis kelamin"> <label for="laki-laki">laki-laki</input>
-                    <input type="radio" id="perempuan" name="jenis kelamin"> <label for="perempuan">perempuan</input>
+                    <input type="radio" id="laki-laki" name="jenis_kelamin"> <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin"> <label for="perempuan">Perempuan</label>
                 </div>
     
                 <div>
-                    <h3> Berat Badan</h3>
-                    <input type="number">
+                    <h3>Berat Badan (kg)</h3>
+                    <input type="number" id="weight" placeholder="Berat Badan (kg)">
                 </div>
-    
+                
                 <div>
-                    <h3> Tinggi Badan</h3>
-                    <input type="number">
+                    <h3>Tinggi Badan (cm)</h3>
+                    <input type="number" id="height" placeholder="Tinggi Badan (cm)">
                 </div>
-    
                 <div>
                     <h3> Usia </h3>
                     <input type="number">
                 </div>
                
                 <div class="form-btn-container">
-                    <button class="button bg-cornsilk"> Hitung BMI</button>
-                    <button class="button bg-reset"> Reset</button>
+                    <button type="button" class="button bg-cornsilk" id="calculate-bmi" onclick="calculateBMI(event)">Hitung BMI</button>
+                    <button class="button bg-reset">Reset</button>
                 </div>
             </form>
     
@@ -63,20 +62,20 @@
             </form>
             <aside>
                 <form>
-                    <h3> Hasil Kalkulator BMI </h3>
+                    <h3>Hasil Kalkulator BMI</h3>
                     <div>
-                        <p> <label for="bmi-value">BMI Value</label> </p>
+                        <p><label for="bmi-value">Nilai BMI</label></p>
                         <input type="text" id="bmi-value" readonly>
                     </div>
                     <div>
-                        <P><label for="weight-status">Weight Status</label></P>
+                        <p><label for="weight-status">Status Berat Badan</label></p>
                         <input type="text" id="weight-status" readonly>
                     </div>
                     <div>
-                        <p><label for="bmi-description">BMI Description:</label></p>
+                        <p><label for="bmi-description">Deskripsi BMI:</label></p>
                         <input type="text" id="bmi-description" readonly>
                     </div>
-                </form>
+                </form>                
 
                 <section>
                     <p>
@@ -94,7 +93,6 @@
             @made by Khairun Nisa 2024
         </p>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
