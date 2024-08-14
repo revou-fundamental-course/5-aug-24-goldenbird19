@@ -118,7 +118,6 @@ input[type="text"] {
   line-height: 20px; /* Tinggi baris untuk menengah teks */
   padding: 0px; /* Padding di dalam textarea */
   border: 1px solid #060606; /* Garis tepi hitam */
-  box-sizing: border-box; /* Menyertakan padding dalam ukuran elemen */
 }
 
 /* Styling untuk elemen textarea */
