@@ -1,117 +1,134 @@
-/* styles.css */
-
+/* Styling untuk input tipe angka dan teks */
 input[type="number"], input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #bdc3c7;
-  border-radius: 4px;
-  font-size: 1rem;
+  width: 100%; /* Lebar penuh untuk penyelarasan yang lebih baik */
+  padding: 10px; /* Padding di dalam field input */
+  border: 1px solid #bdc3c7; /* Border warna abu-abu terang */
+  border-radius: 4px; /* Sudut yang melengkung */
+  font-size: 1rem; /* Ukuran font standar */
 }
 
+/* Styling untuk input tipe radio */
 input[type="radio"] {
-  margin-right: 5px;
+  margin-right: 5px; /* Jarak antara tombol radio dan label */
 }
 
+/* Reset umum untuk box-sizing dan margin/padding */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+    box-sizing: border-box; /* Menyertakan padding dan border dalam ukuran elemen */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
   
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-  }
+/* Styling untuk elemen body */
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    line-height: 1.6; /* Tinggi baris */
+    color: #333; /* Warna teks */
+    background-color: #f9f9f9; /* Warna latar belakang */
+}
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+/* Styling untuk elemen header */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: #fff; /* Warna teks di header */
+    padding: 20px; /* Padding di dalam header */
+    text-align: center; /* Pusatkan teks */
+}
   
-  .main-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+/* Styling untuk judul utama */
+.main-title {
+    font-size: 24px; /* Ukuran font judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
   
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
+/* Styling untuk elemen main */
+main {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-wrap: wrap; /* Membungkus elemen ketika tidak muat di satu baris */
+    justify-content: center; /* Menyelaraskan konten ke tengah */
+    padding: 20px; /* Padding di dalam main */
+}
   
-  aside {
-    flex-basis: 40%;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+/* Styling untuk elemen aside */
+aside {
+    flex-basis: 40%; /* Lebar dasar aside */
+    margin: 20px; /* Margin di sekitar aside */
+    padding: 20px; /* Padding di dalam aside */
+    background-color: #fff; /* Warna latar belakang aside */
+    border: 1px solid #ddd; /* Border abu-abu terang */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
   
-  article {
-    margin-bottom: 20px;
-  }
+/* Styling untuk elemen article */
+article {
+    margin-bottom: 20px; /* Jarak bawah article */
+}
   
-  form {
-    margin-bottom: 20px;
-  }
+/* Styling untuk elemen form */
+form {
+    margin-bottom: 20px; /* Jarak bawah form */
+}
   
-  .form-btn-container {
-    text-align: center;
-    margin-top: 20px;
-  }
+/* Container untuk tombol dalam form */
+.form-btn-container {
+    text-align: center; /* Pusatkan tombol */
+    margin-top: 20px; /* Jarak atas dari tombol */
+}
   
-  .button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+/* Styling umum untuk tombol */
+.button {
+    padding: 10px 20px; /* Padding di dalam tombol */
+    border: none; /* Hapus border default */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    cursor: pointer; /* Ubah kursor saat di-hover */
+}
   
-  .bg-cornsilk {
-    background-color: #fff8dc;
-  }
+/* Styling untuk tombol dengan latar belakang cornsilk */
+.bg-cornsilk {
+    background-color: #fff8dc; /* Warna latar belakang cornsilk */
+}
   
-  .bg-reset {
-    background-color: #ccc;
-  }
+/* Styling untuk tombol reset */
+.bg-reset {
+    background-color: #ccc; /* Warna latar belakang abu-abu */
+}
   
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-  }
+/* Styling untuk elemen footer */
+footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks di footer */
+    padding: 10px; /* Padding di dalam footer */
+    text-align: center; /* Pusatkan teks di footer */
+    clear: both; /* Mengatur footer tetap di bawah */
+}
 
-  input[type="text"] {
-    color: #000;
-    background-color: #fff;
-    font-size: 16px; /* Ukuran teks yang cukup besar */
+/* Styling khusus untuk input teks */
+input[type="text"] {
+    color: #000; /* Warna teks */
+    background-color: #fff; /* Warna latar belakang */
+    font-size: 16px; /* Ukuran font yang cukup besar */
     padding: 10px; /* Tambah padding untuk memastikan ruang cukup */
     border: 1px solid #333; /* Garis tepi yang jelas */
 }
 
+/* Styling untuk textarea deskripsi BMI */
 #bmi-description {
-  height: 100px;
-  font-size: 18px;
-  line-height: 70px;
-  padding: 5px;
-  border: 1px solid #060606;
-  box-sizing: border-box;
+  height: 100px; /* Tinggi textarea */
+  font-size: 18px; /* Ukuran font */
+  line-height: 70px; /* Tinggi baris untuk menengah teks */
+  padding: 5px; /* Padding di dalam textarea */
+  border: 1px solid #060606; /* Garis tepi hitam */
+  box-sizing: border-box; /* Menyertakan padding dalam ukuran elemen */
 }
 
+/* Styling untuk elemen textarea */
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #bdc3c7;
+  width: 100%; /* Lebar penuh */
+  padding: 10px; /* Padding di dalam textarea */
+  border: 1px solid #bdc3c7; /* Garis tepi abu-abu terang */
 }
 
+/* Kelas untuk teks dengan alignment justify */
 .justify {
-  text-align: justify;
+  text-align: justify; /* Meratakan teks */
 }
