@@ -33,24 +33,43 @@ function calculateBMIValue(weight, height) {
 
 function getWeightStatus(bmi) {
     if (bmi < 18.5) {
-        return 'Underweight';
+        return 'kekurangan berat badan';
     } else if (bmi < 25) {
-        return 'Normal weight';
+        return 'Normal(ideal)';
     } else if (bmi < 30) {
-        return 'Overweight';
+        return 'kelebihan berat badan';
     } else {
-        return 'Obese';
+        return 'kegemukan(obesitas)';
     }
 }
 
 function getBMIDescription(bmi) {
+    let description = '';
     if (bmi < 18.5) {
-        return 'You are underweight. You may need to gain some weight.';
+      description = 'Anda kekurangan berat badan. Anda mungkin perlu menambah berat badan untuk mencapai kesehatan yang optimal.';
     } else if (bmi < 25) {
-        return 'You are normal weight. Congratulations!';
+      description = 'Berat badan Anda berada dalam rentang normal. Selamat, Anda memiliki berat badan ideal!';
     } else if (bmi < 30) {
-        return 'You are overweight. You may need to lose some weight.';
+      description = 'Anda memiliki kelebihan berat badan. Anda mungkin perlu mempertimbangkan untuk menurunkan berat badan untuk meningkatkan kesehatan Anda.';
     } else {
-        return 'You are obese. You may need to lose a significant amount of weight.';
+      description = 'Anda mengalami obesitas. Anda mungkin perlu melakukan perubahan signifikan pada pola makan dan gaya hidup untuk meningkatkan kesehatan Anda. Disarankan untuk berkonsultasi dengan profesional medis.';
     }
-}
+    return description.replace(/\n/g, ' ').trim();
+  }
+
+document.getElementById('bmi-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const height = parseFloat(document.getElementById('height').value);
+    const weight = parseFloat(document.getElementById('weight').value);
+    const bmi = weight / ((height / 100) ** 2);
+
+    const bmiDescription = getBMIDescription(bmi);
+    document.getElementById('bmi-description').value = bmiDescription.trim();
+});
+
+
+const resetButton = document.querySelector('.bg-reset');
+
+resetButton.addEventListener('click', () => {
+  location.reload();
+});

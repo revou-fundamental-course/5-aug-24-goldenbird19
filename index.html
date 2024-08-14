@@ -14,10 +14,10 @@
     <main>
         <aside>
             <article>
-                <p> The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. 
-                    Use the "Metric Units" tab for the International System of Units or the "Other Units" tab to convert units into either US or metric units. 
-                    Note that the calculator also computes the Ponderal Index in addition to BMI, both of which are discussed below in detail. </p>
-            </article>
+                <p class="justify"> Kalkulator Indeks Massa Tubuh (BMI) dapat digunakan untuk menghitung nilai BMI dan status berat badan terkait dengan mempertimbangkan usia. 
+                  Gunakan tab "Satuan Metrik" untuk Satuan Sistem Internasional atau tab "Satuan Lainnya" untuk mengonversi satuan menjadi satuan AS atau satuan metrik. 
+                  Perhatikan bahwa kalkulator juga menghitung Indeks Ponderal selain BMI, yang keduanya dibahas secara rinci di bawah ini. </p>
+              </article>
 
             <form>
                 <div>
@@ -42,14 +42,19 @@
                
                 <div class="form-btn-container">
                     <button type="button" class="button bg-cornsilk" id="calculate-bmi" onclick="calculateBMI(event)">Hitung BMI</button>
-                    <button class="button bg-reset">Reset</button>
+                    <button class="button bg-reset" onclick="location.reload()">Reset</button>
                 </div>
             </form>
     
             <article>
                 <header>
                     <h3> Form Information</h3>
-                    <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
+                    <p class="justify">BMI adalah pengukuran kurus atau gemuknya seseorang berdasarkan tinggi dan berat badannya, dan dimaksudkan untuk mengukur massa jaringan.
+                        Ini banyak digunakan sebagai indikator umum apakah seseorang memiliki berat badan yang sehat dibandingkan tinggi badannya. 
+                        Secara khusus, nilai yang diperoleh dari perhitungan BMI digunakan untuk mengkategorikan apakah seseorang termasuk dalam kategori berat badan kurang, berat badan normal, kelebihan berat badan, atau obesitas, bergantung pada kisaran nilai tersebut.
+                        Kisaran BMI ini bervariasi berdasarkan faktor-faktor seperti wilayah dan usia, dan terkadang dibagi lagi menjadi subkategori seperti berat badan sangat kurang atau obesitas sangat parah. 
+                        Kelebihan berat badan atau kekurangan berat badan dapat menimbulkan dampak kesehatan yang signifikan, jadi meskipun BMI merupakan ukuran berat badan sehat yang tidak sempurna, BMI merupakan indikator yang berguna untuk mengetahui apakah diperlukan pengujian atau tindakan tambahan.
+                        Lihat tabel di bawah untuk melihat berbagai kategori berdasarkan BMI yang digunakan oleh kalkulator.</p>
                 </header>
             </article>
 
@@ -61,7 +66,7 @@
 
             </form>
             <aside>
-                <form>
+                <form id="bmi-form">
                     <h3>Hasil Kalkulator BMI</h3>
                     <div>
                         <p><label for="bmi-value">Nilai BMI</label></p>
@@ -72,15 +77,17 @@
                         <input type="text" id="weight-status" readonly>
                     </div>
                     <div>
-                        <p><label for="bmi-description">Deskripsi BMI:</label></p>
-                        <input type="text" id="bmi-description" readonly>
+                        <label for="bmi-description">Hasil BMI:</label>
+                        <textarea id="bmi-description" rows="4" readonly></textarea>
                     </div>
                 </form>                
 
                 <section>
-                    <p>
-                        This calculator is not a medical diagnostic tool or a substitute for consultation with a specialist doctor/nutritionist. This tool is only for screening which you can do yourself, before seeing a doctor. After seeing these results or reading other articles on Hello Sehat, you should still consult a doctor to know more precisely about your current health condition. The results of this BMI calculator cannot be used if you have an eating disorder.
-                    </p>
+                    <p class="justify">
+                        Kalkulator ini bukan merupakan alat diagnosa medis atau pengganti konsultasi dengan dokter spesialis/ahli gizi.
+                        Alat ini hanya untuk screening yang dapat Anda lakukan sendiri, sebelum menemui dokter. Setelah melihat hasil tersebut atau membaca artikel lain di Hello Sehat, 
+                        sebaiknya Anda tetap berkonsultasi dengan dokter untuk mengetahui lebih pasti mengenai kondisi kesehatan Anda saat ini. Hasil kalkulator BMI ini tidak dapat digunakan jika Anda memiliki kelainan makan.
+                   </p>
                 </section>
 
             </aside>

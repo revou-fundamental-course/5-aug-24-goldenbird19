@@ -1,5 +1,17 @@
 /* styles.css */
 
+input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -83,4 +95,23 @@
     font-size: 16px; /* Ukuran teks yang cukup besar */
     padding: 10px; /* Tambah padding untuk memastikan ruang cukup */
     border: 1px solid #333; /* Garis tepi yang jelas */
+}
+
+#bmi-description {
+  height: 100px;
+  font-size: 18px;
+  line-height: 70px;
+  padding: 5px;
+  border: 1px solid #060606;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+}
+
+.justify {
+  text-align: justify;
 }
